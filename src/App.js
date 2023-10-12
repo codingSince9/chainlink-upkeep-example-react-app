@@ -308,13 +308,13 @@ function App () {
             <button onClick={handleAcceptUpkeepAdminTransfer}>Accept Upkeep Admin</button>
           </div>
           <div>
-            <button onClick={handleCancel}>Cancel</button>
-          </div>
-          <div>
             <button onClick={handlePauseUpkeep}>Pause Upkeep</button>
           </div>
           <div>
             <button onClick={handleUnpauseUpkeep}>Unpause Upkeep</button>
+          </div>
+          <div>
+            <button onClick={handleCancel}>Cancel</button>
           </div>
           <div>
             <input
@@ -324,7 +324,7 @@ function App () {
               onChange={e => setInputWithdrawAddress(e.target.value)}
               disabled={!withdrawAvailable}
             />
-            <button onClick={handleWithdrawFunds} disabled={!withdrawAvailable}>Withdraw Funds</button>
+            <button onClick={handleWithdrawFunds} disabled={!withdrawAvailable} >Withdraw Funds</button>
           </div>
           {counterVisible &&
             <div>
